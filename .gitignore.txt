@@ -217,4 +217,7 @@ ENV/
 env.bak/
 venv.bak/
 pip-selfcheck.json
+
+!.gitignore
+
 # End of https://www.gitignore.io/api/django,python,windows,visualstudiocode
