@@ -9,7 +9,7 @@
 </head>
 <body>
 <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
-  <h5 class="my-0 mr-md-auto font-weight-normal">Company name</h5>
+  <h5 class="my-0 mr-md-auto font-weight-normal">WeatherApp</h5>
   <nav class="my-2 my-md-0 mr-md-3">
     <a class="p-2 text-dark" href="#">Main</a>
     <a class="p-2 text-dark" href="#">Information</a>
@@ -31,7 +31,10 @@
 <div class="col-4 offset-1">
    <h1>Information</h1> 
    <div class="alert alert-light">
-       Weather in Prague
+       <b>City:</b> {{ info.city }}<br>
+       <b>Temperature:</b> {{ info.temp }}<sup>o</sup><br>
+       <b>Pressure:</b> {{ info.pres }} hPa<br>
+       <img src="http://openweathermap.org/img/w/{{ info.icon }}.png" alt="Photo weather" class="img-thumbnail">
    </div>
         </div>
     </div>
